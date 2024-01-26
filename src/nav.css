@@ -1,0 +1,94 @@
+.navbar {
+  color: white;
+  position: absolute;
+  z-index: 99;
+  right: 30px;
+  top: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.navbar > div > a {
+  font-size: 18px;
+  padding: 10px 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.144);
+  color: white;
+}
+.navbar>section>div>p{
+    font-size: 18px;
+    padding: 10px 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.114);
+    color: rgb(255, 255, 255);
+    margin: 0px;
+}
+
+.boxx{
+    background-color: rgba(19, 19, 19, 0.575); 
+    height: 100vh;
+    width: 60%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 150;
+    margin-left: -60%;
+    transition: 0.5s linear;
+    backdrop-filter: blur(16px);
+}
+.cancel{
+    text-align: end;
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+.list>ul>li{
+    list-style: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.list>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+.list>ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+    color: white;
+}
+
+@media (max-width: 800px) {
+  .navbar> div{
+    display: none;
+  }
+  .navbar>section{
+    display: block;
+  }
+  .navbar{
+    top: 20px;
+  }
+}
+@media (min-width: 800px) {
+    .navbar>section{
+        display: none;
+    }
+}
+@media (max-width: 500px){
+    .navbar{
+        top: 10px;
+        right: 10px;
+    }
+}
+

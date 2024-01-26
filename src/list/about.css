@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Burned&display=swap');
+
+.main-1 {
+  color: white;
+  background-color: #000000;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  overflow-y: scroll;
+  z-index: 1;
+  animation: scale-up-hor-center 1s ease-in;
+}
+
+@keyframes scale-up-hor-center {
+  0% {
+      opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.main-1::-webkit-scrollbar{
+  display: none;
+}
+.about > h1 {
+  font-family: "Rubik Burned", system-ui;
+  font-weight: 500;
+  text-align: center;
+}
+.about > h1 > span {
+  color: rgb(57, 168, 13);
+  padding-left: 5px;
+}
+.about > h3 {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.815);
+}
+.personal > p {
+  margin-top: 50px;
+  width: 600px;
+  color: rgba(255, 255, 255, 0.623);
+  word-spacing: 2px;
+}
+.knowledge > div {
+  padding: 30px 60px;
+  background-color: #ffffff0a;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  overflow: hidden;
+}
+.knowledge {
+  display: flex;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+@media (max-width: 800px) {
+  .knowledge > div {
+    background-color: #ffffff38;
+  }
+}
+
+/* this style for contact element */
+
+.main-2 {
+  color: white;
+  background-color: #000000;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  overflow-y: scroll;
+  animation: scale-up-hor-center 1s ease-in;
+}
+.main-2::-webkit-scrollbar{
+  display: none;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 50px;
+  padding: 30px 20px 20px 20px;
+  /* background-color: #ffffff11; */
+  border-radius: 6px;
+  position: relative;
+}
+.form > input {
+  border: 2px solid rgba(255, 255, 255, 0.425);
+  background-color: transparent;
+  color: white;
+  outline: none;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 7px;
+  width: 300px;
+  font-family: "Poppins", sans-serif;
+  transition: 0.1s linear;
+}
+.form > input::placeholder {
+  color: rgba(255, 255, 255, 0.842);
+}
+.form > textarea::placeholder {
+  color: rgba(255, 255, 255, 0.842);
+}
+.form > input:active {
+  border-color: rgb(255, 255, 255);
+}
+.form > textarea:active {
+  border-color: rgb(255, 255, 255);
+}
+.form > textarea {
+  transition: 0.1s linear;
+  width: 300px;
+  border: 2px solid rgba(255, 255, 255, 0.425);
+  background-color: transparent;
+  color: white;
+  outline: none;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 7px;
+  font-family: "Poppins", sans-serif;
+}
+.form > span {
+  font-size: 16px;
+  margin-left: 240px;
+  padding: 5px 12px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s linear;
+  cursor: pointer;
+  gap: 6px;
+  color: rgba(255, 255, 255, 0.63);
+}
+.form > span:hover {
+  background-color: rgba(255, 255, 255, 0.068);
+  color: white;
+}
+.img > img {
+  height: 300px;
+  width: 180px;
+}
+.picture {
+  display: flex;
+  gap: 50px;
+}
+.img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+}
+.img > div {
+  display: flex;
+  gap: 40px;
+  font-size: 22px;
+}
+.img > div > a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px 10px;
+  background-color: rgb(57, 2, 255);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* this style for project element */
+
+.main-3 {
+  color: white;
+  background-color: #000000;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  animation: scale-up-hor-center 1s ease-in;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 90%;
+  position: relative;
+  z-index: 50;
+  overflow-y: scroll;
+  padding-bottom: 20px;
+}
+.projects::-webkit-scrollbar {
+  display: none;
+}
+.projects > div {
+  height: 180px;
+  width: 300px;
+  border: none;
+  background-color: #ffffff1a;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.projects > div > img {
+  border-radius: 4px;
+  height: 180px;
+  width: 300px;
+  position: relative;
+  z-index: 40;
+  cursor: pointer;
+}
+.projects > div > span {
+  position: absolute;
+  z-index: 50;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 10px 5px 10px;
+  width: 280px;
+  background-color: #000000c9;
+  border-radius: 4px;
+  transition: 0.5s linear;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.projects > div > span:hover{
+    padding-bottom: 155px;
+}
+
+@media (max-width: 800px){
+  .personal>p{
+      width: 97%;
+      text-align: center;
+      font-size: 17px;
+      color: rgba(255, 255, 255, 0.795);
+      padding: 6px;
+  }
+  .about>h1{
+    font-size: 50px;
+  }
+  .about>h3{
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.959);
+  }
+  .knowledge{
+    flex-direction: column;
+  }
+  .picture{
+    flex-direction: column;
+    gap: 0px;
+  }
+  .form{
+    padding: 30px 20px 0px 20px;
+    margin-top: 20px;
+    background-color: rgba(255, 254, 254, 0.075);
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  .h1{
+    padding-top: 60px;
+  }
+  .form>span{
+    color: white;
+  }
+  .form>input{
+    border-color: white;
+  }
+  .form>textarea{
+    border-color: white;
+  }
+  .form{
+    margin-top: 30px;
+  }
+  .img>img{
+    display: none;
+  }
+  .picture{
+    margin-top: 50px;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 400px){
+  .personal>p{
+    margin-top: 10px;
+  }
+  .knowledge{
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .form{
+    margin: 10px;
+  }
+}

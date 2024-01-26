@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Poppins", sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.main {
+  background-color: #000000;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow-y: scroll;
+  animation: scale-up-hor-center 1s ease-in;
+}
+
+@keyframes scale-up-hor-center {
+  0% {
+      opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.main::-webkit-scrollbar {
+  display: none;
+}
+.circle {
+  height: 650px;
+  width: 600px;
+  background-color: #01a3ff;
+  background-image: linear-gradient(160deg, #01a3ff 0%, #2e1996 74%);
+  position: absolute;
+  left: -300px;
+  border-radius: 50%;
+}
+.photo {
+  height: 450px;
+  width: 280px;
+  background-color: rgb(0, 0, 0);
+  border: 2px solid rgba(255, 255, 255, 0.295);
+  position: relative;
+  border-radius: 20px;
+  /* left: -160px; */
+  overflow: hidden;
+}
+.photo > img {
+  height: 500px;
+  width: 500px;
+  margin-left: -90px;
+  margin-top: -40px;
+  filter: drop-shadow(5px 5px 10px #000000);
+}
+.content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.content > h1 {
+  font-family: "Rubik Burned", system-ui;
+  font-weight: 500;
+  text-align: center;
+  font-size: 40px;
+}
+.content > h1 > span {
+  color: rgb(57, 168, 13);
+  padding-left: 5px;
+}
+.content > p {
+  width: 550px;
+  margin: 0;
+}
+.content > a > span {
+  font-size: 18px;
+  border: 2px solid rgb(255, 255, 255);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+}
+.content > a {
+  text-decoration: none;
+  display: flex;
+  color: white;
+  font-weight: 600;
+  align-items: center;
+  justify-content: space-between;
+  width: 125px;
+  font-size: 12px;
+  padding: 3px 3px 3px 6px;
+  border-radius: 500px;
+  background-color: rgb(43, 129, 199);
+  transition: 0.5s linear;
+  margin-left: 10px;
+}
+/* .content>a:hover{
+  width: 125px;
+  font-size: 12px;
+  padding: 3px 3px 3px 6px;
+} */
+.mern {
+  font-size: 28px;
+}
+.para {
+  font-size: 12px;
+  text-align: start;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.847);
+  padding: 10px;
+}
+
+@media (max-width: 800px) {
+  .photo {
+    height: 250px;
+    width: 250px;
+    left: 0;
+    margin-top: 30px;
+  }
+  .photo > img {
+    height: 300px;
+    width: 300px;
+    margin-left: 10px;
+  }
+  .content > h1 {
+    font-size: 38px;
+  }
+  .content > p {
+    width: 97%;
+    text-align: center;
+  }
+  .mern {
+    font-size: 26px;
+  }
+  .para {
+    font-size: 16px;
+  }
+  .content > a {
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+  .circle {
+    background-color: rgba(43, 129, 199, 0.541);
+  }
+  .content {
+    margin-top: -20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .circle {
+    height: 100vh;
+    width: 200vw;
+
+    position: fixed;
+    margin-left: -250px;
+  }
+}
