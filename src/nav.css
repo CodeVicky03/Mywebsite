@@ -67,6 +67,8 @@
     align-items: center;
     height: 70vh;
     color: white;
+    margin: 0px;
+    padding: 0px;
 }
 
 @media (max-width: 800px) {

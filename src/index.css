@@ -70,7 +70,6 @@ code {
   gap: 20px;
 }
 .content > h1 {
-  font-family: "Rubik Burned", system-ui;
   font-weight: 500;
   text-align: center;
   font-size: 40px;
@@ -167,8 +166,26 @@ code {
   .circle {
     height: 100vh;
     width: 200vw;
-
     position: fixed;
     margin-left: -250px;
+  }
+}
+
+@media (max-width: 400px){
+  .content>h1{
+    font-size: 36px;
+  }
+  .mern{
+    font-size: 18px;
+  }
+  .para{
+    font-size: 12px;
+  }
+  .photo{
+    height: 250px;
+  width: 220px;
+  }
+  .photo>img{
+    margin-left: -20px;
   }
 }
